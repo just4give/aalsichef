@@ -1,0 +1,30 @@
+$screen-sm:		400px;
+$primary-background:	#e9eaed;
+$band-primary-bg-color: #E2BD09;
+$band-primary-text-color: #4E0404;
+$focus-shadow-color: #A78207;
+$dark-brown:#4E0404;
+$btn-type-2-bg: #DE5536;
+$btn-type-2-bg-hover:	#B12505;
+
+
+@mixin box-shadow{
+-ms-box-shadow: 2px 2px 2px #CCC8C8;
+	-moz-box-shadow: 2px 2px 2px #CCC8C8;
+	-webkit-box-shadow: 2px 2px 2px #CCC8C8;
+	box-shadow: 2px 2px 2px #CCC8C8;
+}
+
+.btn{
+
+		&:focus,&:active.focus,&:active:focus{
+			background-color: transparent;
+			-webkit-box-shadow:none;
+			border: 0px;
+			outline: none;
+		}
+		@media (max-width : $screen-sm){
+		font-size:12px;
+    	
+	}
+}

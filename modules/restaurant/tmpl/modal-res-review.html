@@ -1,0 +1,67 @@
+<div class="modal" >
+	<div class="modal-dialog  modal-lg ">
+		<div class="modal-content">
+			<div class="modal-header ">
+				<span>Write your review</span>
+				<button type="button" class="close"  ng-click="$hide()">x</button>
+				
+			</div>
+			<div class="modal-body">
+				
+				
+				<p class="col-xs-12">
+					<ul class="review-rating">
+						<li value=1><i class="fa fa-star"></i></li>
+						<li value=2><i class="fa fa-star"></i></li>
+						<li value=3><i class="fa fa-star"></i></li>
+						<li value=4><i class="fa fa-star"></i></li>
+						<li value=5><i class="fa fa-star"></i></li>
+					</ul>
+				</p>
+				<textarea class="" rows="3" placeholder="Write your review..."></textarea>
+				<!-- {{files}} -->
+				
+				<div class="alert alert-danger" role="alert" ng-show="fileuploadError">
+				  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+				 Maximum file size 5MB
+				</div>
+				
+				<div class="row file-upload">
+				
+				  <ul>
+				    <li ng-repeat="f in files" class="col-xs-12 col-md-6" style="margin-bottom: 5px;">
+				    	<div  class="img-preview col-xs-4">
+				    		<img ng-src="{{f.s3url}}">
+				    		<div class="spinner" ng-show="f.loading"><i class="fa fa-spinner fa-spin fa-3x" ></i></div>
+				    		<div class="spinner" ng-show="f.failed"><i class="fa fa-exclamation-triangle"></i></div>
+				    	</div>
+				    	<div class="col-xs-8">
+				    		<textarea class="col-xs-12" rows="2" placeholder="Write a caption for your photo..."></textarea>
+				    		<button class="btn btn-danger" style="margin-top: 5px;"><i class="fa fa-trash"></i> Remove</button>
+				    		
+				    	</div>
+				    	
+				    
+				    </li>     
+				  </ul>
+				  
+				</div><!-- end of file upload -->
+				<br>
+			
+			</div>
+			<div class="modal-footer">
+				<!-- <div class="fileUpload btn btn-inline">
+				    <span><i class="fa fa-camera-retro"></i> ADD PHOTO</span>
+				    <input type="file" class="upload" />
+				</div> -->
+				<button class="btn btn-inline" ngf-select="uploadFiles($file)" 
+          			accept="image/*" ngf-resize="{width: 1000 }" ngf-capture="'camera'" ngf-max-size="5MB"><i class="fa fa-camera-retro"></i> ADD PHOTO</button>
+				<button type="button" class="btn btn-type-2" >POST</button>
+				
+				
+				
+			</div>
+			
+		</div>
+	</div>
+</div>
