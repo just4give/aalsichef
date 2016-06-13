@@ -40,13 +40,13 @@ define(dependencies, function(){
 	    
 	    $scope.gallery = [
 		                     {
-		                    	 url:"bg1.jpg"
+		                    	 url:"fish-and-chips.jpg"
 		                     },
 		                     {
-		                    	 url:"bg2.jpg"
+		                    	 url:"fried-calamari.jpg"
 		                     },
 		                     {
-		                    	 url:"bg3.jpg"
+		                    	 url:"lobster_rolls.jpg"
 		                     },
 		                     {
 		                    	 url:"bg1.jpg"

@@ -8,22 +8,22 @@ define(dependencies, function(){
 	   $log.debug('loading search controller');
 	   
 	   $scope.stores=[{
-		   name:"Riya's home kitchen",
-		   address:"Jadavpur, Kolkata",
+		   name:"Jack's kitchen",
+		   address:"Braintree, MA",
 		   phone:"860-679-9909",
 		   hour:"3PM-10PM",
-		   desc:"Biriyani, Chicken Cutlet, Fish Chop, Mutton Curry",
-		   photos:[{url:"bg1.jpg"},{url:"bg2.jpg"},{url:"bg3.jpg"},{url:"bg4.jpg"},{url:"bg1.jpg"},{url:"bg2.jpg"}]
+		   desc:"Fried Calamari, Fish and Chips, Lobster Roll",
+		   photos:[{url:"fish-and-chips.jpg"},{url:"fried-calamari.jpg"},{url:"lobster_rolls.jpg"},{url:"bg4.jpg"},{url:"bg1.jpg"},{url:"bg2.jpg"}]
 	   },
 	   {name:"Just Food",
-		   address:"Golpark, Kolkata",
+		   address:"Natick, MA",
 		   phone:"860-679-9909",
 		   hour:"3PM-10PM",
 		   photos:[]
 	   
 	   },
-	   {name:"Bengali House",
-		   address:"Jadavpur, Kolkata",
+	   {name:"Kebab House",
+		   address:"Cambridge, MA",
 		   phone:"860-679-9909",
 		   hour:"3PM-10PM",
 		   photos:[{url:"bg1.jpg"},{url:"bg3.jpg"},{url:"bg4.jpg"},{url:"bg2.jpg"}]

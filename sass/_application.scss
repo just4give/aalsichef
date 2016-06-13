@@ -208,7 +208,7 @@ body::-webkit-scrollbar {
 	
 	
 	img{
-		height: 300px;
+		height: auto;
     	width: 100%;
     	position: absolute;
 	}
@@ -216,7 +216,7 @@ body::-webkit-scrollbar {
 	@media (max-width : 400px){
 		height: 200px;
 		img{
-		height: 200px;
+		//height: 200px;
     	
 	}
 	}
